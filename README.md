@@ -1,2 +1,2 @@
 # CSE1
-Specialization project in autonomous guidance and control
+Master project in autonomous guidance and collision avoidance
