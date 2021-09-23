@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<robot name="water">
+    <link name="odom">
+        <visual>
+            <geometry>
+                <mesh scale="0.1 0.1 0.1"
+filename="package://boat_model/meshes/water.stl"/>
+            </geometry>
+            <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+            <material name="water">
+                <color rgba="0.5 0.5 1 0.5"/>
+            </material>
+        </visual>
+    </link>
+</robot>

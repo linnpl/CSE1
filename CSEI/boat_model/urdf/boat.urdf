@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="csei">
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <mesh scale="0.010 0.010 0.010"
+filename="package://boat_model/meshes/lowpolyship.stl"/>
+            </geometry>
+            <origin rpy="1.5807 0 1.5807" xyz="0 0 0.1"/>
+            <material name="red_metal">
+                <color rgba="1 0.2 0.2 1"/>
+            </material>
+        </visual>
+    </link>
+</robot>

@@ -1,0 +1,16 @@
+<launch>
+
+  <arg name="boat" default="$(find boat_model)/urdf/boat.urdf"/>
+  <arg name="pool" default="$(find boat_model)/urdf/pool.urdf"/>
+  <arg name="water" default="$(find boat_model)/urdf/water.urdf"/>
+  <arg name="gui" default="true" />
+  <arg name="rvizconfig" default="$(find boat_model)/rviz/urdf.rviz"/>
+
+  <param name="boat" command="$(find xacro)/xacro $(arg boat)" />
+  <param name="pool" command="$(find xacro)/xacro $(arg pool)" />
+  <param name="water" command="$(find xacro)/xacro $(arg water)" />
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find boat_model)/rviz_config/Boat.rviz" required="true" />
+
+  <node name="tf_publisher" pkg="boat_model" type="node.py" />
+
+</launch>
